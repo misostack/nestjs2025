@@ -4,7 +4,10 @@
 
 ### Entry Level
 
-1. [ ] Layer Pattern
+1. [x] Layer Pattern
+
+![Image](https://github.com/user-attachments/assets/2c55af93-3c46-44d1-86a6-46a0d2ec6856)
+
 2. [ ] Data Validation
 3. [ ] ORM and Data Migration
 4. [ ] Repository Pattern
