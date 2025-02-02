@@ -1,12 +1,32 @@
 # NestJS 2025 Topics
 
+## Development
+
+```sh
+docker-compose -f docker-compose-local.yml up -d
+npm i --save @nestjs/typeorm typeorm pg
+cp .env.example .env
+```
+
+### Migrations with TypeORM
+
+Typescript version
+
+```sh
+npm run typeorm:dev migration:show
+npm run typeorm:dev migration:generate ./src/core/database/migrations/AddUserRoleColumn
+npm run typeorm:dev migration:create -n AddUserRoleColumn
+npm run typeorm:dev migration:run
+npm run typeorm:dev migration:revert
+```
+
 ## Topics
 
 ### Entry Level
 
 1. [x] Layer Pattern
 
-![Image](https://github.com/user-attachments/assets/2c55af93-3c46-44d1-86a6-46a0d2ec6856)
+![Image](https://github.com/user-attachments/assets/6826dddf-32b1-4133-b8f5-4a78bedd3d40)
 
 2. [ ] Data Validation
 3. [ ] ORM and Data Migration
@@ -32,3 +52,4 @@
 ## References
 
 - [NestJS Boilerplate 2024](https://github.com/misostack/nestjs-boilerplate-2024/blob/master/README.md)
+- [NestJS Data Flow Testing](https://github.com/misostack/nestjs-boilerplate/tree/main/src/persistence/database/tests)
